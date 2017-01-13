@@ -1,9 +1,5 @@
-def read(self):
-	f = open('lifts.txt', 'r')
-	print file.read
 
-def updateLift(self, liftDictionary, lift, weight):
-	liftDictionary[lift] = weight
+def updateLift(self, lift, weight):
 	f = open('lifts.txt', 'r')
 	lines = f.readlines()
 	f.close
@@ -11,7 +7,7 @@ def updateLift(self, liftDictionary, lift, weight):
 	f = open('lifts.txt' ,'w')
 	for line in lines:
 		words = line.split(" ")
-		if words[0] != 'lift':
+		if words[0] != lift:
 			f.write(line)
 	f.close()
 

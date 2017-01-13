@@ -1,0 +1,5 @@
+bench - 165
+squat - 165
+row - 115
+deadlift - 225
+ohp - 85
