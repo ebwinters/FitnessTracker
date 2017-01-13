@@ -1,5 +1,5 @@
 
-def updateLift(self, lift, weight):
+def updateLift(lift, weight):
 	f = open('lifts.txt', 'r')
 	lines = f.readlines()
 	f.close
@@ -12,7 +12,7 @@ def updateLift(self, lift, weight):
 	f.close()
 
 	f = open('lifts.txt', 'a')
-	f.write("{0} - {1}").format(lift, weight)
+	f.write("{0} - {1}".format(lift, weight))
 	f.close()
 
 
